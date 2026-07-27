@@ -7,11 +7,8 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="Implemented user registration API">
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserService.java" afterDir="false" />
+    <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="dded BCrypt password hashing">
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785180075261</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dded BCrypt password hashing">
+      <option name="closed" value="true" />
+      <created>1785180640079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1785180640079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +230,7 @@
     <MESSAGE value="Created UserRepository using Spring Data JPA" />
     <MESSAGE value="Implemented DTO mapping using Java Streams" />
     <MESSAGE value="Implemented user registration API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented user registration API" />
+    <MESSAGE value="dded BCrypt password hashing" />
+    <option name="LAST_COMMIT_MESSAGE" value="dded BCrypt password hashing" />
   </component>
 </project>
