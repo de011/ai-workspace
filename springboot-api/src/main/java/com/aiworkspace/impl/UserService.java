@@ -6,6 +6,7 @@ import com.aiworkspace.entity.User;
 import com.aiworkspace.mapper.UserMapper;
 import com.aiworkspace.repository.UserRepository;
 import com.aiworkspace.service.UserService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -15,9 +16,11 @@ import java.util.List;
 class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
+    private final BCryptPasswordEncoder passwordEncoder;
 
-    public UserServiceImpl(UserRepository userRepository) {
+    public UserServiceImpl(UserRepository userRepository, BCryptPasswordEncoder passwordEncoder) {
         this.userRepository = userRepository;
+        this.passwordEncoder = passwordEncoder;
     }
     @Override
         public List<UserResponse> getAllUsers() {
@@ -39,7 +42,7 @@ class UserServiceImpl implements UserService {
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
                 .email(request.getEmail())
-                .password(request.getPassword())   // We'll encrypt this next lesson
+                .password(passwordEncoder.encode(request.getPassword()))   // Encrypt the password
                 .role("USER")
                 .createdAt(LocalDateTime.now())
                 .updatedAt(LocalDateTime.now())
