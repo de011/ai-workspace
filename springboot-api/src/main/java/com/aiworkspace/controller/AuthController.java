@@ -1,6 +1,8 @@
 package com.aiworkspace.controller;
 
 import com.aiworkspace.common.ApiResponse;
+import com.aiworkspace.dto.LoginRequest;
+import com.aiworkspace.dto.LoginResponse;
 import com.aiworkspace.dto.RegisterRequest;
 import com.aiworkspace.dto.UserResponse;
 import com.aiworkspace.service.UserService;
@@ -30,6 +32,22 @@ public class AuthController {
                 ApiResponse.<UserResponse>builder()
                         .success(true)
                         .message("User Registered Successfully")
+                        .data(response)
+                        .timestamp(LocalDateTime.now().toString())
+                        .build()
+        );
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<ApiResponse<LoginResponse>> login(
+            @Valid @RequestBody LoginRequest request) {
+
+        LoginResponse response = userService.login(request);
+
+        return ResponseEntity.ok(
+                ApiResponse.<LoginResponse>builder()
+                        .success(true)
+                        .message("Login Successful")
                         .data(response)
                         .timestamp(LocalDateTime.now().toString())
                         .build()
