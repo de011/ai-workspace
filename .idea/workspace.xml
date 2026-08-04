@@ -7,11 +7,19 @@
     <option name="selectedModelId" value="auto" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="Implemented JWT authentication filter and security context">
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/exception/DuplicateResourceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/exception/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/exception/ResourceNotFoundException.java" afterDir="false" />
+    <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="Added custom exception classes and error response model&quot;">
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/test/java/com/aiworkspace/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +37,7 @@
         <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -104,6 +113,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.SpringbootApiApplication.executor": "Run",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "copilot.chat.legacySessionMetadata.migrated": "true",
     "git-widget-placeholder": "dev-",
     "junie.onboarding.icon.badge.shown": "true",
@@ -228,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785353188215</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added custom exception classes and error response model&quot;">
+      <option name="closed" value="true" />
+      <created>1785437197954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1785437197954</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +271,7 @@
     <MESSAGE value="dded BCrypt password hashing" />
     <MESSAGE value="Configured Spring Security" />
     <MESSAGE value="Implemented JWT authentication filter and security context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented JWT authentication filter and security context" />
+    <MESSAGE value="Added custom exception classes and error response model&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added custom exception classes and error response model&quot;" />
   </component>
 </project>
