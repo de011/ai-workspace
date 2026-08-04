@@ -6,12 +6,14 @@ import com.aiworkspace.dto.LoginResponse;
 import com.aiworkspace.dto.RegisterRequest;
 import com.aiworkspace.dto.UserResponse;
 import com.aiworkspace.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
-
+@Tag(name = "Authentication", description = "Authentication APIs")
 @RestController
 @RequestMapping("/api/v1/auth")
 public class AuthController {
@@ -21,7 +23,7 @@ public class AuthController {
     public AuthController(UserService userService){
         this.userService = userService;
     }
-
+    @Operation(summary = "Register a new user")
     @PostMapping("/register")
     public ResponseEntity<ApiResponse<UserResponse>> register(
             @Valid @RequestBody RegisterRequest request){
