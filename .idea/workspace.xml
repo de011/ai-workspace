@@ -8,18 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="Added custom exception classes and error response model&quot;">
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/src/test/java/com/aiworkspace/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/kafka/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/dto/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/dto/RegisterRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/SpringbootApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +125,14 @@
     "two.files.diff.last.used.folder": "/Users/deepakkumar/Documents/ai-workspace/ai-service"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.aiworkspace.controller" />
+    </key>
+  </component>
   <component name="RunManager">
     <recent_temporary>
       <list>
@@ -247,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785437197954</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added custom exception classes and error response model&quot;">
+      <option name="closed" value="true" />
+      <created>1785871668985</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1785871668985</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
