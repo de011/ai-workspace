@@ -8,14 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1d6d7d1-2c4d-4af2-bb7f-4ef9d323d586" name="Changes" comment="Added custom exception classes and error response model&quot;">
-      <change afterPath="$PROJECT_DIR$/docker/kafka/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-api/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/config/KafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/event/UserCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/kafka/KafkaConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/kafka/KafkaProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/SpringbootApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/SpringbootApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/main/java/com/aiworkspace/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-api/src/test/java/com/aiworkspace/SpringbootApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-api/src/test/java/com/aiworkspace/SpringbootApiApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +36,9 @@
       <list>
         <option value="Interface" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -259,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785871668985</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added custom exception classes and error response model&quot;">
+      <option name="closed" value="true" />
+      <created>1786034494684</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1786034494684</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
